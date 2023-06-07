@@ -1,4 +1,4 @@
-<h2>Interpolations</h2>
+<!--<h2>Interpolations</h2>
 
 <p>{{ nome }} tem {{ idade }} anos!</p>
 
@@ -21,9 +21,19 @@
 
 <h2>Event Binding</h2>
 
-<button (click)="alertaInfo()">Evento</button>
+<button (click)="alertaInfo($event)">Evento</button>
+<div (mousemove)="mouseMoveTeste($event)" style="background: red; width: 300px; height: 300px;"></div>
+{{ position.x }}:{{ position.y }}
 
 <br>
 <br>
 
 <hr>
+<h2>Two-way binding</h2>
+<input [(ngModel)] = "nome">
+{{nome}}
+
+<br>
+<br>
+
+<hr>-->

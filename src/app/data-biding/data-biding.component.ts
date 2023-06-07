@@ -16,11 +16,17 @@ export class DataBidingComponent implements OnInit {
   public imgTitle:string = "Property binding"
   public imgAlt: string = "W3Schools.com"
 
-  public alertaInfo() {
-    alert("Alerta!!");
-  }
+  public position: {x: number, y: number} = {x: 0, y: 0};
 
   constructor() { }
+  
+  public alertaInfo(valor: MouseEvent) {
+    console.log(valor);
+  }
+  public mouseMoveTeste(valor:MouseEvent) {
+    this.position.y = valor.offsetX;
+    this.position.x = valor.offsetY;
+  }
 
   ngOnInit(): void {
   }
